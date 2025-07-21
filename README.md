@@ -4,7 +4,7 @@
 
 This project focuses on 5 critical skills in shell scripting  to better equip us with the capabilities to harness the required skills needed in both shell scripting and cloud computing.
 
-We will demonstrate how to leverage on and apply these tools together, to achieve our desired objective to build, deploy and manage scalable and robust systems in the cloud.
+We will demonstrate how to leverage on and apply these tools together to build, deploy and manage scalable and robust systems in the cloud.
 
 These 5 critical concepts are:
 
@@ -39,7 +39,7 @@ This is the hash sign followed by the exclamation mark (#!), then specify the pa
 
   #!/bin/bash
 
-  Also AWS Cli must be configured before
+  Also AWS Cli must be configured 
 
   We will apply functions in setting up EC2 and define it using the following syntax:
 
@@ -87,12 +87,12 @@ This is the hash sign followed by the exclamation mark (#!), then specify the pa
 
 
  
-   ![alt text](<Images/Scripting Images 2.PNG>)
-   ![alt text](<Images/Scripting Images 3.PNG>)
+    ![alt text](<Images/Scripting Images 2.PNG>)
+    ![alt text](<Images/Scripting Images 3.PNG>)
    
    
    
-   **Environment variables**
+    **Environment variables**
 
      Environment variables  are used in scripting to code sensitive information about AWS credentials without exposing the actual values.
      For instance AWS-access_key_id and AWS_secret_access_key can be stored in the environment variables.
@@ -155,7 +155,45 @@ This is the hash sign followed by the exclamation mark (#!), then specify the pa
    The above script can then be added to their launch instance script to catch any errors on customer information before the instance is launched, thereby making for a more seamless customer experience.
 
    The script can be updated , applying these 5 concepts to develop a script for Datawise's E-commerce Start-up.
+       ![alt text](<Images/Scripting Images 8.PNG>)
+       ![alt text](<Images/Scripting Images 9.PNG>)
+       ![alt text](<Images/Scripting Images 10.PNG>)
+       
+      The above script when launched will automate these five concepts before proceeding to launch the instance.
 
 
-   
+      For S3 setup, Datawise will also apply these five (5) concepts in developing a script to automate 
+      
+      the setup of S3 Bucket.
 
+      We apply Functions to modularize logic such as create_bucket, validate_region, etc.
+
+      Arrays are applied for bucket configurations such as multiple bucket names, or region selection, 
+      
+      while environment variables are applied for sensitive configurations such as S3_ACL.
+
+      Command-line arguments are used to override default behaviour such as in overriding bucket name,  ACL or region.
+      
+      For validation and CLI failure feedback,  catching and managing failures, we apply error-handling.
+
+      We develop a script to automate the setup of an S3 bucket using the above 5 concepts as follows:
+
+         Images/Scripting Images 11.PNG
+         Images/Scripting Images 12.PNG
+         Images/Scripting Images 12.PNG
+         Images/Scripting Images 13.PNG
+         Images/Scripting Images 14.PNG
+
+      
+      To run the script, we set the permissions to run the script with command:
+
+      chmod +x datawise_script.sh 
+
+
+      ### Conclusion
+
+      This progject has shown how to apply the five (5) critical concepts in shell scripting namely: Functions , Arrays, Environment variables, Command line arguments and Error handling to develop a shell script to automate launching an Ec2 instance and setting up an S3 Bucket.
+
+      We applied functions in EC2 and  creating S3 bucket. Arrays are used to manage a list of resources created, as seen in the script above, while Environment variables and Command line arguments are applied as required to store senstive information and customize customer information of the E-commerce startup. Also they are able to implement an error handling mechanism makng their error recovery seemless.
+
+      We have demonstrated the script individually as well as in unison to showcase how tese 5 concepts can promote efficiency in the use of cloud services in a real -world setting using this e-commerce startup; by outlining the various situations where they can be applied to enhance customer interactions.

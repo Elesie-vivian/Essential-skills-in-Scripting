@@ -79,8 +79,7 @@ This is the hash sign followed by the exclamation mark (#!), then specify the pa
 
    Using the Vi editor we develop the script as follows:
 
-   ![alt text](<Images/Scrpting images 1.PNG>)
-  
+   
   
    **Arrays:** Arrays are used in shell scripting to manage and loop through multiple values. For instance, to store multiple configuration options like AMI IDs, instance types, security groups etc or even launch multiple instances. This start-up can therefore use arrays in configuring their vast range of customer information using automation; therby ensuring ease of sourcing and delivering information as required by their customers.
 
@@ -196,4 +195,40 @@ This is the hash sign followed by the exclamation mark (#!), then specify the pa
 
    We first highlighted these concept individually, then gradually built up the script to show these five concepts applied in unison to automate setting up an EC2 instance and creating S3 bucket. We applied Functions to setup anEC2 instance and configure S3 Bucket, Arrays are used to manage a list of resources created, as seen in the script, while Environment variables and Command line arguments are applied as required to store sensitive information and customize customer information of the E-commerce startup. Also they are able to implement an error handling mechanism makng their error recovery seemless.
 
-   We have demonstrated the script individually as well as in unison to showcase how these 5 concepts together can promote efficiency in the use of cloud services in a real-world setting using this e-commerce startup; outlining the various situations where they enhance customer interactions.
+   We have demonstrated the script individually as well as in unison to showcase how these 5 concepts 
+   
+   together can promote efficiency in the use of cloud services in a real-world setting using this 
+   
+   e-commerce startup; outlining the various situations where they enhance customer interactions.
+
+    This means that typically if a customer (e.g, Mr Haruna), places an order online, this code when in 
+   
+    place will ensure the following:
+
+    * Searches through the company's databse of various customer information , re-trieves and delivers this information swiftly and seamlessly
+
+    * Mr Haruna information is secure in it's own bucket.
+
+    For instance, When shopping online, Mr Haruna's login details 
+    
+    and password cannot be assessed by another customer neither can he(Mr Haruna),  be able to access the 
+    
+    details of another customer's shopping.
+
+    * every customer's information is secure within its own instance or bucket because the script has been designes as such.
+
+    * Mr Haruna when trying to login in or edit his profile will see that details of his registration
+    
+    have remained accurate each time he returns for a new shopping experience.
+
+    * On the Company's part, the script ensures that they are able to deliver accurately, the exact 
+    
+    products ordered by Mr Haruna and several other customers as seen in their shopping cart without 
+    
+    mix-up or errors in orders.
+    
+    Ultimately, every enquiry, delivery and experience on the E-commerce online shop is delivered timely 
+    
+    These are some of the many several scenarios showcasing the use of the script in automation in 
+    
+    enhancing the start-up's shopping experience.
